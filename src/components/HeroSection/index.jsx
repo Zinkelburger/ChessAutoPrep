@@ -3,7 +3,6 @@ import { Button, Group } from '@mantine/core';
 import { Link } from "react-router-dom";
 
 import "./style.css";
-import "../../App.css";
 
 function HeroSection() {
  return (

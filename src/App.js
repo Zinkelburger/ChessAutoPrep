@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 // Components
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Events from "./pages/Events";
 
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Submit from "./pages/Submit";
 
 function App() {
   return (
@@ -17,11 +17,11 @@ function App() {
         <NavBar />
 
         {/* LINKS  */}
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/submit" component={Submit} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/submit" element={<Submit />} />
+        </Routes>
 
         <Footer />
       </Router>

@@ -1,0 +1,26 @@
+.chessDisplayStyle {
+    background-color: #242424;
+    color: #fff;
+}
+
+.fenInput {
+    font-size: 12px;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+}
+
+.chessboardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.chessboardContainer {
+    margin: 10px;
+}
+
+.plusButton {
+    font-size: 30px;
+    padding: 10px;
+}
+  

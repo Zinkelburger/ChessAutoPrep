@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24339598.css",
+    "main.js": "/static/js/main.d5101c84.js",
+    "static/media/chessMonkeys.png": "/static/media/chessMonkeys.e4a5aaacc02ccca85a08.png",
+    "index.html": "/index.html",
+    "main.24339598.css.map": "/static/css/main.24339598.css.map",
+    "main.d5101c84.js.map": "/static/js/main.d5101c84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24339598.css",
+    "static/js/main.d5101c84.js"
+  ]
+}

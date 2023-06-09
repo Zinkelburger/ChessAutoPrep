@@ -6,6 +6,7 @@ import "../../App.css";
 import HeroSection from "../../components/HeroSection";
 
 function Home() {
+  console.log('Home component rendered');
   return (
     <>
       <HeroSection />
