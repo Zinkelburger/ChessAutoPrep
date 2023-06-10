@@ -1,11 +1,12 @@
-.aboutPageStyle {
+.successPageStyle {
     background-color: #242424;
     color: #fff;
     margin: 0 auto;
     width: 80%;
-    min-height: 75vh;
+    min-height: 70vh;
+    font-size: 1.3rem;
 }
 
-.aboutPageContainer {
+.successPageContainer {
     background-color: #242424;
 }

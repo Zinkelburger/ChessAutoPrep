@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Chessboard from "chessboardjsx";
+import EmailForm from '../EmailForm';
 
 import './style.css';
 
 const maxFENsStored = 30;
+
 function ChessDisplay() {
   const [fens, setFens] = useState([
     'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
@@ -31,8 +33,16 @@ function ChessDisplay() {
     setFens(newFens);
   };
 
+  const handleEmailSuccess = () => {
+    // Save state of ChessDisplay component
+    // Redirect user to success page
+  };
+
   return (
     <div className='chessDisplayStyle'>
+      <div>
+        <EmailForm fens={fens} onSuccess={handleEmailSuccess} />
+      </div>
       <div className='chessboardsContainer'>
         {fens.map((fen, index) => (
           <div key={index} className='chessboardContainer'>

@@ -15,7 +15,8 @@ function HeroSection() {
  <Link to="/about">
  <Button color="lighter-dark" size="md">Learn More</Button>
  </Link>
- <Button variant="filled" size="md" href="/shop" component={Link}>Join</Button>
+
+ <Button variant="filled" size="md" to="/submit" component={Link}>Join</Button>
 </Group>
  </div>
  </div>

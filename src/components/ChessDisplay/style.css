@@ -1,6 +1,7 @@
 .chessDisplayStyle {
     background-color: #242424;
     color: #fff;
+    min-height: 70vh;
 }
 
 .fenInput {
