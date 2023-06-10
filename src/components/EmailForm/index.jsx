@@ -38,8 +38,8 @@ function EmailForm({ fens, onSuccess }) {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Email: 
-        <input type="email" value={email} onChange={handleEmailChange} />
+        Email:&nbsp;
+        <input type="email" value={email} onChange={handleEmailChange} style={{ marginRight: "0.5em" }}/>
       </label>
       <input type="submit" value="Submit" />
     </form>
