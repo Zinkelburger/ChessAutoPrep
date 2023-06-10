@@ -43,6 +43,7 @@ function ChessDisplay() {
       <div>
         <EmailForm fens={fens} onSuccess={handleEmailSuccess} />
       </div>
+      <br></br>
       <div className='chessboardsContainer'>
         {fens.map((fen, index) => (
           <div key={index} className='chessboardContainer'>
