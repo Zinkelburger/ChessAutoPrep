@@ -4,7 +4,7 @@ import EmailForm from '../EmailForm';
 
 import './style.css';
 
-const maxFENsStored = 30;
+const maxFENsStored = 50;
 
 function ChessDisplay() {
   const [fens, setFens] = useState([

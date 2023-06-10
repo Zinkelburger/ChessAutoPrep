@@ -15,10 +15,7 @@ function NavBar() {
         <div className="navbar-container">
           {/* NAVBAR LOGO  */}
           <Link to="/" className="navbar-logo">
-            <i
-              className="fas fa-chess-rook"
-              style={{ marginRight: "12px", color: "white" }}
-            />
+            <img src="logoTransparent.png" alt="Logo" style={{ width: "50px", height: "50px" }} />
             Chess Auto Prep
           </Link>
 

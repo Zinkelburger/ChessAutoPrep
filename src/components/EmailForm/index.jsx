@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Chess } from 'chess.js';
 import { useNavigate } from 'react-router-dom';
 
-
 function isValidFen(fen) {
     try {
       new Chess(fen);
@@ -39,7 +38,7 @@ function EmailForm({ fens, onSuccess }) {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Email:
+        Email: 
         <input type="email" value={email} onChange={handleEmailChange} />
       </label>
       <input type="submit" value="Submit" />
