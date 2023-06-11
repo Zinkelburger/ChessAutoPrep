@@ -8,3 +8,5 @@ Instead of Docker, I am going to run this site on a droplet with pm2. To run wit
 The server also serves as a /save-data endpoint which writes to a data.txt file
 
 EmailForm uses filter and the chess library to check for valid FENs. This way only valid FENs are written to the data.txt file.
+
+When deploying the site on a droplet, it can be difficult to run npm install due to limited memory. So I gave my droplet 3GB of swap (probably too much), and run npm install with node --max-old-space-size=3096 /usr/bin/npm install

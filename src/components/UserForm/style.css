@@ -1,0 +1,13 @@
+.form-style {
+    display: flex;
+    flex-direction: column;
+ }
+  
+.input-wrapper {
+    display: flex;
+}
+
+.input-wrapper label {
+    width: 8em;
+    text-align: right;
+}

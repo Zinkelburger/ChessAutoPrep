@@ -3,17 +3,17 @@ import { Chess } from 'chess.js';
 import { useNavigate } from 'react-router-dom';
 
 function isValidFen(fen) {
-    try {
-      new Chess(fen);
-      return true;
-    } catch (e) {
-      return false;
-    }
+  try {
+    new Chess(fen);
+    return true;
+  } catch (e) {
+    return false;
   }
+}
 
-function EmailForm({ fens, onSuccess }) {
+function EmailForm({ fens, email: initialEmail = '', onSuccess }) {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState(initialEmail);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);

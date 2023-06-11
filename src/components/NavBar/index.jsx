@@ -40,6 +40,13 @@ function NavBar() {
               </Link>
             </li>
 
+            {/* GENERATE  */}
+            <li className="nav-item">
+              <Link to="/generate" className="nav-links" onClick={closeMobileMenu}>
+                Generate
+              </Link>
+            </li>
+
             {/* SUBMIT  */}
             <li className="nav-item">
               <Link to="/submit" className="nav-links" onClick={closeMobileMenu}>

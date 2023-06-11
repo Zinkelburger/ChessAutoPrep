@@ -1,0 +1,12 @@
+.notFoundStyle {
+    background-color: #242424;
+    color: #fff;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 75vh;
+}
+
+.outerWrapper {
+    background-color: #242424;
+    color: #fff;
+}

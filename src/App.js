@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Submit from "./pages/Submit";
 import SuccessPage from "./pages/SuccessPage";
+import GenerateFENsPage from "./pages/GenerateFENsPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/submit" element={<Submit />} />
           <Route path="/success" element={<SuccessPage />} />
+          <Route path="/generate" element={<GenerateFENsPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

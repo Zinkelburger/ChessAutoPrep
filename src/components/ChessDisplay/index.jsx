@@ -6,10 +6,9 @@ import './style.css';
 
 const maxFENsStored = 50;
 
-function ChessDisplay() {
-  const [fens, setFens] = useState([
-    'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
-  ]);
+function ChessDisplay({ fens: initialFens = [], email: initialEmail = '' }) {
+  const [fens, setFens] = useState(initialFens);
+  const [email, setEmail] = useState(initialEmail);
 
   const handleFenChange = (index) => (event) => {
     const newFens = [...fens];
@@ -41,9 +40,9 @@ function ChessDisplay() {
   return (
     <div className='chessDisplayStyle'>
       <div>
-        <EmailForm fens={fens} onSuccess={handleEmailSuccess} />
+        <EmailForm email={email} fens={fens} onSuccess={handleEmailSuccess} />
       </div>
-      <br></br>
+      <br />
       <div className='chessboardsContainer'>
         {fens.map((fen, index) => (
           <div key={index} className='chessboardContainer'>
